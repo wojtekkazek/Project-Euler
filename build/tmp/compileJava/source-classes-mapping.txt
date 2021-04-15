@@ -1,6 +1,6 @@
 projectEulerProblems/p1/MultiplesOf3And5_simple.java
  projectEulerProblems.p1.MultiplesOf3And5_simple
-projectEulerProblems/p2/EvenFibonacciNumbers.java
- projectEulerProblems.p2.EvenFibonacciNumbers
 projectEulerProblems/p1/MultiplesOf3And5.java
  projectEulerProblems.p1.MultiplesOf3And5
+projectEulerProblems/p2/EvenFibonacciNumbers.java
+ projectEulerProblems.p2.EvenFibonacciNumbers
