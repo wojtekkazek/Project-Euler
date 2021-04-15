@@ -10,3 +10,5 @@ projectEulerProblems/p1/MultiplesOf3And5.java
  projectEulerProblems.p1.MultiplesOf3And5
 projectEulerProblems/p4/LargestPalindromeProduct.java
  projectEulerProblems.p4.LargestPalindromeProduct
+projectEulerProblems/p5/SmallestMultiple.java
+ projectEulerProblems.p5.SmallestMultiple
