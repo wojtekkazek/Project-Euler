@@ -1,0 +1,2 @@
+projectEulerTasks/t1/MultiplesOf3And5.java
+ projectEulerTasks.t1.MultiplesOf3And5
