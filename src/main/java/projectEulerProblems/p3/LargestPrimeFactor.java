@@ -22,5 +22,4 @@ public class LargestPrimeFactor {
         }
         return number;
     }
-
 }

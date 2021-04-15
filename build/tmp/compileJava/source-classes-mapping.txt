@@ -2,9 +2,11 @@ projectEulerProblems/p1/MultiplesOf3And5_simple.java
  projectEulerProblems.p1.MultiplesOf3And5_simple
 projectEulerProblems/p2/EvenFibonacciNumbers.java
  projectEulerProblems.p2.EvenFibonacciNumbers
-projectEulerProblems/p1/MultiplesOf3And5.java
- projectEulerProblems.p1.MultiplesOf3And5
 projectEulerProblems/p3/LargestPrimeFactor_tooMuchCalcs.java
  projectEulerProblems.p3.LargestPrimeFactor_tooMuchCalcs
 projectEulerProblems/p3/LargestPrimeFactor.java
  projectEulerProblems.p3.LargestPrimeFactor
+projectEulerProblems/p1/MultiplesOf3And5.java
+ projectEulerProblems.p1.MultiplesOf3And5
+projectEulerProblems/p4/LargestPalindromeProduct.java
+ projectEulerProblems.p4.LargestPalindromeProduct
