@@ -1,4 +1,4 @@
-package projectEulerTasks.t1;
+package projectEulerProblems.p1;
 
 public class MultiplesOf3And5 {
 
