@@ -15,7 +15,7 @@ public class SmallestMultiple {
     }
 
     public static boolean isNumberDivisibleByNumbersFromRange (int number, int min, int max) {
-        for (int i = min; i <= max; i++) {
+        for (int i = max; i >= min; i--) {
             if (number % i != 0) {
                 return false;
             }

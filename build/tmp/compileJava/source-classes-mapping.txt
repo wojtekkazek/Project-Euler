@@ -8,13 +8,13 @@ projectEulerProblems/p3/LargestPrimeFactor.java
  projectEulerProblems.p3.LargestPrimeFactor
 projectEulerProblems/p7/Prime10001st.java
  projectEulerProblems.p7.Prime10001st
-projectEulerProblems/p5/SmallestMultiple.java
- projectEulerProblems.p5.SmallestMultiple
+projectEulerProblems/p8/LargestProductInSeries.java
+ projectEulerProblems.p8.LargestProductInSeries
 projectEulerProblems/p6/SumSquareDifference.java
  projectEulerProblems.p6.SumSquareDifference
 projectEulerProblems/p1/MultiplesOf3And5.java
  projectEulerProblems.p1.MultiplesOf3And5
 projectEulerProblems/p4/LargestPalindromeProduct.java
  projectEulerProblems.p4.LargestPalindromeProduct
-projectEulerProblems/p8/LargestProductInSeries.java
- projectEulerProblems.p8.LargestProductInSeries
+projectEulerProblems/p5/SmallestMultiple.java
+ projectEulerProblems.p5.SmallestMultiple
