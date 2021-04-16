@@ -14,3 +14,5 @@ projectEulerProblems/p5/SmallestMultiple.java
  projectEulerProblems.p5.SmallestMultiple
 projectEulerProblems/p6/SumSquareDifference.java
  projectEulerProblems.p6.SumSquareDifference
+projectEulerProblems/p7/Prime10001st.java
+ projectEulerProblems.p7.Prime10001st
