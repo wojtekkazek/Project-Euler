@@ -12,3 +12,5 @@ projectEulerProblems/p4/LargestPalindromeProduct.java
  projectEulerProblems.p4.LargestPalindromeProduct
 projectEulerProblems/p5/SmallestMultiple.java
  projectEulerProblems.p5.SmallestMultiple
+projectEulerProblems/p6/SumSquareDifference.java
+ projectEulerProblems.p6.SumSquareDifference
