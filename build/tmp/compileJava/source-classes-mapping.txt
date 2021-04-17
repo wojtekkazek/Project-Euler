@@ -22,5 +22,7 @@ projectEulerProblems/p9/Triplet.java
  projectEulerProblems.p9.Triplet
 projectEulerProblems/p9/SpecialPythagoreanTriplet.java
  projectEulerProblems.p9.SpecialPythagoreanTriplet
+projectEulerProblems/p10/SummationOfPrimes_faster.java
+ projectEulerProblems.p10.SummationOfPrimes_faster
 projectEulerProblems/p10/SummationOfPrimes.java
  projectEulerProblems.p10.SummationOfPrimes
