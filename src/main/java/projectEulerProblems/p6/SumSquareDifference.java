@@ -1,9 +1,15 @@
 package projectEulerProblems.p6;
 
+import projectEulerProblems.p7.Prime10001st;
+
+import java.util.logging.Logger;
+
 public class SumSquareDifference {
     public static void main(String[] args) {
         int differenceBetweenSquareOfSumAndSumOfSquaresOfNumbersBelow100 = calculateDifferenceBetweenSquareOfSumAndSumOfSquaresOfNumbersBelow(100);
-        System.out.println(differenceBetweenSquareOfSumAndSumOfSquaresOfNumbersBelow100);
+
+        Logger LOGGER = Logger.getLogger(SumSquareDifference.class.getName());
+        LOGGER.info(String.valueOf(differenceBetweenSquareOfSumAndSumOfSquaresOfNumbersBelow100));
     }
 
     public static int calculateDifferenceBetweenSquareOfSumAndSumOfSquaresOfNumbersBelow(int max) {

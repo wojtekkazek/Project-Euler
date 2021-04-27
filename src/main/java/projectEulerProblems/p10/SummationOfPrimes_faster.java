@@ -1,9 +1,13 @@
 package projectEulerProblems.p10;
 
+import java.util.logging.Logger;
+
 public class SummationOfPrimes_faster {
     public static void main(String[] args) {
-        Long sumOfPrimesBelow2Milion = calculateSumOfPrimesBelow(2000000L);
-        System.out.println(sumOfPrimesBelow2Milion);
+        Long sumOfPrimesBelow2Million = calculateSumOfPrimesBelow(2000000L);
+
+        Logger LOGGER = Logger.getLogger(SummationOfPrimes_faster.class.getName());
+        LOGGER.info(sumOfPrimesBelow2Million.toString());
     }
 
     public static Long calculateSumOfPrimesBelow (Long max) {

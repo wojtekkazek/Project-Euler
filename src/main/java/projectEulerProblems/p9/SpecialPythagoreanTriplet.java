@@ -1,13 +1,18 @@
 package projectEulerProblems.p9;
 
+import projectEulerProblems.p10.SummationOfPrimes;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 public class SpecialPythagoreanTriplet {
     public static void main(String[] args) {
         Triplet tripletWithSumEqualTo1000 = findTripletWithSumEqualTo(1000);
-        System.out.println(tripletWithSumEqualTo1000.getProduct());
-        System.out.println(tripletWithSumEqualTo1000);
+
+        Logger LOGGER = Logger.getLogger(SummationOfPrimes.class.getName());
+        LOGGER.info((String.valueOf(tripletWithSumEqualTo1000.getProduct())));
+        LOGGER.info(tripletWithSumEqualTo1000.toString());
     }
 
     public static Triplet findTripletWithSumEqualTo (int sum) {

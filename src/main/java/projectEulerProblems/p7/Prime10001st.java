@@ -1,9 +1,15 @@
 package projectEulerProblems.p7;
 
+import projectEulerProblems.p8.LargestProductInSeries;
+
+import java.util.logging.Logger;
+
 public class Prime10001st {
     public static void main(String[] args) {
         int primary10001st = findPrimaryOfSpecificOrder(10001);
-        System.out.println(primary10001st);
+
+        Logger LOGGER = Logger.getLogger(Prime10001st.class.getName());
+        LOGGER.info(String.valueOf(primary10001st));
     }
 
     public static int findPrimaryOfSpecificOrder(int orderNo) {

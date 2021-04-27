@@ -1,10 +1,14 @@
 package projectEulerProblems.p1;
 
+import java.util.logging.Logger;
+
 public class MultiplesOf3And5 {
 
     public static void main(String[] args) {
         int sumOfAllMultiplesOf3Or5Below1000 = calculateSumOfMultiplesOfTwoNumbersBelowNumber(3, 5, 1000);
-        System.out.println(sumOfAllMultiplesOf3Or5Below1000);
+
+        Logger LOGGER = Logger.getLogger(MultiplesOf3And5.class.getName());
+        LOGGER.info(String.valueOf(sumOfAllMultiplesOf3Or5Below1000));
     }
 
     public static int calculateSumOfMultiplesOfTwoNumbersBelowNumber(int multiplier1, int multiplier2, int max) {

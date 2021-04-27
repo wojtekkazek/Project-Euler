@@ -1,9 +1,15 @@
 package projectEulerProblems.p5;
 
+import projectEulerProblems.p6.SumSquareDifference;
+
+import java.util.logging.Logger;
+
 public class SmallestMultiple {
     public static void main(String[] args) {
         int smallestNumberDivisibleByNumbersFrom1To20 = findSmallestNumberDivisibleByNumbersFromRange(1, 20);
-        System.out.println(smallestNumberDivisibleByNumbersFrom1To20);
+
+        Logger LOGGER = Logger.getLogger(SmallestMultiple.class.getName());
+        LOGGER.info(String.valueOf(smallestNumberDivisibleByNumbersFrom1To20));
     }
 
     public static int findSmallestNumberDivisibleByNumbersFromRange (int min, int max) {

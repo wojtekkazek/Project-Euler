@@ -1,11 +1,16 @@
 package projectEulerProblems.p2;
 
+import projectEulerProblems.p3.LargestPrimeFactor;
+
+import java.util.logging.Logger;
+
 public class EvenFibonacciNumbers {
 
     public static void main(String[] args) {
-        int sumOfEvenFibonacciNumbersBelow4milion = findSumOfEvenFibonacciNumbersBelow(4000000);
-        System.out.println(sumOfEvenFibonacciNumbersBelow4milion);
+        int sumOfEvenFibonacciNumbersBelow4Million = findSumOfEvenFibonacciNumbersBelow(4000000);
 
+        Logger LOGGER = Logger.getLogger(EvenFibonacciNumbers.class.getName());
+        LOGGER.info(String.valueOf(sumOfEvenFibonacciNumbersBelow4Million));
     }
 
     public static int findSumOfEvenFibonacciNumbersBelow(int max) {

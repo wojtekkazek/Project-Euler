@@ -1,12 +1,17 @@
 package projectEulerProblems.p4;
 
+import projectEulerProblems.p5.SmallestMultiple;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 public class LargestPalindromeProduct {
     public static void main(String[] args) {
         int largestPalindromeMadeFromProductOf3Digits = findLargestPalindromeOfDigits(3);
-        System.out.println(largestPalindromeMadeFromProductOf3Digits);
+
+        Logger LOGGER = Logger.getLogger(LargestPalindromeProduct.class.getName());
+        LOGGER.info(String.valueOf(largestPalindromeMadeFromProductOf3Digits));
     }
 
     public static int findLargestPalindromeOfDigits(int noOfDigits) {

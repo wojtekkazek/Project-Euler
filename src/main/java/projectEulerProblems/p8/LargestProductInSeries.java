@@ -1,9 +1,12 @@
 package projectEulerProblems.p8;
 
+import projectEulerProblems.p10.SummationOfPrimes_faster;
+
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Logger;
 
 public class LargestProductInSeries {
     public static void main(String[] args) {
@@ -27,8 +30,10 @@ public class LargestProductInSeries {
                 "84580156166097919133875499200524063689912560717606" +
                 "05886116467109405077541002256983155200055935729725" +
                 "71636269561882670428252483600823257530420752963450");
-        BigInteger largestProductOf13AdjacentNumberFrom1000DigitsNumer = findLargestProductOfNumberOfAdjacentDigitsFromNumber(13, digits1000);
-        System.out.println(largestProductOf13AdjacentNumberFrom1000DigitsNumer);
+        BigInteger largestProductOf13AdjacentNumberFrom1000DigitsNumber = findLargestProductOfNumberOfAdjacentDigitsFromNumber(13, digits1000);
+
+        Logger LOGGER = Logger.getLogger(LargestProductInSeries.class.getName());
+        LOGGER.info(largestProductOf13AdjacentNumberFrom1000DigitsNumber.toString());
     }
 
     public static BigInteger findLargestProductOfNumberOfAdjacentDigitsFromNumber(int digitsQty, BigInteger number) {

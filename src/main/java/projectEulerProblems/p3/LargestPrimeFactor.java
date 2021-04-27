@@ -1,9 +1,13 @@
 package projectEulerProblems.p3;
 
+import java.util.logging.Logger;
+
 public class LargestPrimeFactor {
     public static void main(String[] args) {
         Long largestPrimeFactorOf600851475143 = findLargestPrimeFactorOf(600851475143L);
-        System.out.println(largestPrimeFactorOf600851475143);
+
+        Logger LOGGER = Logger.getLogger(LargestPrimeFactor.class.getName());
+        LOGGER.info(String.valueOf(largestPrimeFactorOf600851475143));
     }
 
     public static Long findLargestPrimeFactorOf(Long number) {
