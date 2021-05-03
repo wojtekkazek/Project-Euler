@@ -2,7 +2,8 @@ package projectEulerProblems.p11;
 
 import java.util.logging.Logger;
 
-public class LargestProductInGrid {
+//works only with square grid of 2-digit numbers. Robust version in LargestProductInGrid class.
+public class LargestProductInGrid_limited {
 
     public static void main(String[] args) {
         String numbers =
@@ -26,29 +27,29 @@ public class LargestProductInGrid {
                         "20 69 36 41 72 30 23 88 34 62 99 69 82 67 59 85 74 04 36 16\n" +
                         "20 73 35 29 78 31 90 01 74 31 49 71 48 86 81 16 23 57 05 54\n" +
                         "01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48";
-        long largestProductOf4AdjacentNumbers = findLargestProduct(numbers, 4);
+        int largestProductOf4AdjacentNumbers = findLargestProduct(numbers, 4);
 
-        Logger LOGGER = Logger.getLogger(LargestProductInGrid.class.getName());
+        Logger LOGGER = Logger.getLogger(LargestProductInGrid_limited.class.getName());
         LOGGER.info(String.valueOf(largestProductOf4AdjacentNumbers));
     }
 
-    public static long findLargestProduct(String numbers, int qtyOfAdjacentNumbers) {
+    public static int findLargestProduct(String numbers, int qtyOfAdjacentNumbers) {
         String[][] grid = convertStringIntoGrid(numbers);
-        long largestProductInRows = findLargestProductInRows(grid, qtyOfAdjacentNumbers);
-        long largestProductInColumns = findLargestProductInColumns(grid, qtyOfAdjacentNumbers);
-        long largestProductInDiagonals = findLargestProductInDiagonals(grid, qtyOfAdjacentNumbers);
+        int largestProductInRows = findLargestProductInRows(grid, qtyOfAdjacentNumbers);
+        int largestProductInColumns = findLargestProductInColumns(grid, qtyOfAdjacentNumbers);
+        int largestProductInDiagonals = findLargestProductInDiagonals(grid, qtyOfAdjacentNumbers);
 
-        long largestProduct = Math.max(Math.max(largestProductInRows, largestProductInColumns), largestProductInDiagonals);
+        int largestProduct = Math.max(Math.max(largestProductInRows, largestProductInColumns), largestProductInDiagonals);
         return largestProduct;
     }
 
-    public static long findLargestProductInDiagonals(String[][] grid, int qtyOfAdjacentNumbers) {
-        long largestProductInDiagonals = 0;
+    public static int findLargestProductInDiagonals(String[][] grid, int qtyOfAdjacentNumbers) {
+        int largestProductInDiagonals = 0;
         int noOfRowsStartingDiagonals = grid.length - qtyOfAdjacentNumbers + 1;
-        int noOfCombinationsInRow = grid[0].length - qtyOfAdjacentNumbers + 1;
+        int noOfCombinationsInRow = grid.length - qtyOfAdjacentNumbers + 1;
         for (int j = 0; j < noOfRowsStartingDiagonals; j++) {
             for (int i = 0; i < noOfCombinationsInRow; i++) {
-                long product = 1;
+                int product = 1;
                 for (int k = 0; k < qtyOfAdjacentNumbers; k++) {
                     product = product * Integer.parseInt(grid[j + k][i + k]);
                 }
@@ -57,7 +58,7 @@ public class LargestProductInGrid {
                 }
             }
             for (int i = qtyOfAdjacentNumbers - 1; i < grid.length; i++) {
-                long product = 1;
+                int product = 1;
                 for (int k = 0; k < qtyOfAdjacentNumbers; k++) {
                     product = product * Integer.parseInt(grid[j + k][i - k]);
                 }
@@ -69,12 +70,12 @@ public class LargestProductInGrid {
         return largestProductInDiagonals;
     }
 
-    public static long findLargestProductInColumns(String[][] grid, int qtyOfAdjacentNumbers) {
-        long largestProductInColumns = 0;
+    public static int findLargestProductInColumns(String[][] grid, int qtyOfAdjacentNumbers) {
+        int largestProductInColumns = 0;
         int noOfCombinationsInColumn = grid.length - qtyOfAdjacentNumbers + 1;
-        for (int j = 0; j < grid[0].length; j++) {
+        for (int j = 0; j < grid.length; j++) {
             for (int i = 0; i < noOfCombinationsInColumn; i++) {
-                long product = 1;
+                int product = 1;
                 for (int k = 0; k < qtyOfAdjacentNumbers; k++) {
                     product = product * Integer.parseInt(grid[i + k][j]);
                 }
@@ -86,12 +87,12 @@ public class LargestProductInGrid {
         return largestProductInColumns;
     }
 
-    public static long findLargestProductInRows(String[][] grid, int qtyOfAdjacentNumbers) {
-        long largestProductInRows = 0;
-        int noOfCombinationsInRow = grid[0].length - qtyOfAdjacentNumbers + 1;
+    public static int findLargestProductInRows(String[][] grid, int qtyOfAdjacentNumbers) {
+        int largestProductInRows = 0;
+        int noOfCombinationsInRow = grid.length - qtyOfAdjacentNumbers + 1;
         for (int j = 0; j < grid.length; j++) {
             for (int i = 0; i < noOfCombinationsInRow; i++) {
-                long product = 1;
+                int product = 1;
                 for (int k = 0; k < qtyOfAdjacentNumbers; k++) {
                     product = product * Integer.parseInt(grid[j][i + k]);
                 }
@@ -104,13 +105,15 @@ public class LargestProductInGrid {
     }
 
     public static String[][] convertStringIntoGrid(String numbers) {
-        String rows[] = numbers.split("(\n)");
-        String[] firstRowArray = rows[0].split("\\s+");
-        String[][] grid = new String[rows.length][firstRowArray.length];
-        for (int i = 0; i < rows.length; i++) {
-            String[] row = rows[i].split("\\s+");
-            for (int j = 0; j < row.length; j++) {
-                grid[i][j] = row[j];
+        int noOfNumbers = (numbers.length()+1)/3;
+        int gridSize = (int)Math.sqrt(noOfNumbers);
+        String[][] grid = new String[gridSize][gridSize];
+        grid[0][0] = numbers.substring(0, 2);
+        int rowLength = gridSize*3;
+        for (int i = 0; i < gridSize; i++) {
+            for (int j = 0; j < gridSize; j++) {
+                int rowBeginning = j * rowLength;
+                grid[j][i] = numbers.substring(rowBeginning + 3*i, rowBeginning + 3*i+2);
             }
         }
         printGrid(grid);
@@ -118,15 +121,11 @@ public class LargestProductInGrid {
     }
 
     public static void printGrid(String[][] grid) {
-        int noOfRows = grid.length;
-        int noOfColumns = grid[0].length;
-
-        for (int i = 0; i < noOfRows; i++) {
-            for (int j = 0; j < noOfColumns; j++) {
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid.length; j++) {
                 System.out.print(grid[i][j] + " ");
             }
             System.out.println();
         }
-        System.out.println(grid[0][1]);
     }
 }

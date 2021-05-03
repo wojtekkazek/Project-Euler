@@ -1,28 +1,32 @@
+projectEulerProblems/p10/SummationOfPrimes_faster.java
+ projectEulerProblems.p10.SummationOfPrimes_faster
+projectEulerProblems/p3/LargestPrimeFactor_tooMuchCalcs.java
+ projectEulerProblems.p3.LargestPrimeFactor_tooMuchCalcs
+projectEulerProblems/p10/SummationOfPrimes.java
+ projectEulerProblems.p10.SummationOfPrimes
 projectEulerProblems/p3/LargestPrimeFactor.java
  projectEulerProblems.p3.LargestPrimeFactor
+projectEulerProblems/p7/Prime10001st.java
+ projectEulerProblems.p7.Prime10001st
+projectEulerProblems/p5/SmallestMultiple.java
+ projectEulerProblems.p5.SmallestMultiple
+projectEulerProblems/p8/LargestProductInSeries.java
+ projectEulerProblems.p8.LargestProductInSeries
 projectEulerProblems/p4/LargestPalindromeProduct.java
  projectEulerProblems.p4.LargestPalindromeProduct
 projectEulerProblems/p6/SumSquareDifference.java
  projectEulerProblems.p6.SumSquareDifference
-projectEulerProblems/p3/LargestPrimeFactor_tooMuchCalcs.java
- projectEulerProblems.p3.LargestPrimeFactor_tooMuchCalcs
-projectEulerProblems/p9/SpecialPythagoreanTriplet.java
- projectEulerProblems.p9.SpecialPythagoreanTriplet
-projectEulerProblems/p8/LargestProductInSeries.java
- projectEulerProblems.p8.LargestProductInSeries
-projectEulerProblems/p10/SummationOfPrimes_faster.java
- projectEulerProblems.p10.SummationOfPrimes_faster
-projectEulerProblems/p2/EvenFibonacciNumbers.java
- projectEulerProblems.p2.EvenFibonacciNumbers
-projectEulerProblems/p5/SmallestMultiple.java
- projectEulerProblems.p5.SmallestMultiple
-projectEulerProblems/p7/Prime10001st.java
- projectEulerProblems.p7.Prime10001st
-projectEulerProblems/p9/Triplet.java
- projectEulerProblems.p9.Triplet
-projectEulerProblems/p10/SummationOfPrimes.java
- projectEulerProblems.p10.SummationOfPrimes
 projectEulerProblems/p1/MultiplesOf3And5_simple.java
  projectEulerProblems.p1.MultiplesOf3And5_simple
+projectEulerProblems/p2/EvenFibonacciNumbers.java
+ projectEulerProblems.p2.EvenFibonacciNumbers
+projectEulerProblems/p9/SpecialPythagoreanTriplet.java
+ projectEulerProblems.p9.SpecialPythagoreanTriplet
 projectEulerProblems/p1/MultiplesOf3And5.java
  projectEulerProblems.p1.MultiplesOf3And5
+projectEulerProblems/p9/Triplet.java
+ projectEulerProblems.p9.Triplet
+projectEulerProblems/p11/LargestProductInGrid_limited.java
+ projectEulerProblems.p11.LargestProductInGrid_limited
+projectEulerProblems/p11/LargestProductInGrid.java
+ projectEulerProblems.p11.LargestProductInGrid
