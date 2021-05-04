@@ -30,3 +30,5 @@ projectEulerProblems/p11/LargestProductInGrid_limited.java
  projectEulerProblems.p11.LargestProductInGrid_limited
 projectEulerProblems/p11/LargestProductInGrid.java
  projectEulerProblems.p11.LargestProductInGrid
+projectEulerProblems/p12/HighlyDivisibleTriangularNumber.java
+ projectEulerProblems.p12.HighlyDivisibleTriangularNumber
