@@ -32,3 +32,5 @@ projectEulerProblems/p11/LargestProductInGrid.java
  projectEulerProblems.p11.LargestProductInGrid
 projectEulerProblems/p12/HighlyDivisibleTriangularNumber.java
  projectEulerProblems.p12.HighlyDivisibleTriangularNumber
+projectEulerProblems/p13/LargeSum.java
+ projectEulerProblems.p13.LargeSum
